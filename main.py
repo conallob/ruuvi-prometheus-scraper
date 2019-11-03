@@ -1,35 +1,16 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 import time
 import pprint
 import signal
 import sys
-from prometheus_client import Gauge, start_http_server
+from prometheus_client import Gauge
+from prometheus_client import start_http_server
 from ruuvitag_sensor.ruuvi import RuuviTagSensor
 
 beacons = {
-    'D2:43:21:3A:40:95': {
-        'name': 'Kylppäri',
-        'last_update': 0.0,
-        'sensor_data': {},
-    },
-    'E6:14:B2:83:D1:D7': {
-        'name': 'Parveke',
-        'last_update': 0.0,
-        'sensor_data': {},
-    },
-    'F7:16:D7:54:CF:BC': {
-        'name': 'Olkkari',
-        'last_update': 0.0,
-        'sensor_data': {},
-    },
-    'C8:58:81:78:A4:01': {
-        'name': 'Jääkaappi',
-        'last_update': 0.0,
-        'sensor_data': {},
-    },
-    'E9:0A:E4:6C:01:71': {
-        'name': 'Sauna',
+    '12:34:56:78:90:AB': {
+        'name': 'master_bedroom',
         'last_update': 0.0,
         'sensor_data': {},
     },
@@ -59,7 +40,7 @@ def sigint_handler(signal, frame):
 if __name__ == '__main__':
     signal.signal(signal.SIGINT, sigint_handler)
     print("Starting HTTP server for Prometheus scraping")
-    start_http_server(8000)
+    start_http_server(9521)
 
     print("Reading data from Ruuvi tags")
     RuuviTagSensor.get_datas(handle_data, beacons.keys())
