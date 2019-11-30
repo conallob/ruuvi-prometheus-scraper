@@ -9,8 +9,8 @@ from prometheus_client import start_http_server
 from ruuvitag_sensor.ruuvi import RuuviTagSensor
 
 beacons = {
-    '12:34:56:78:90:AB': {
-        'name': 'master_bedroom',
+    'FA:5A:4A:CF:1C:2A': {
+        'name': 'sitting_room',
         'last_update': 0.0,
         'sensor_data': {},
     },
