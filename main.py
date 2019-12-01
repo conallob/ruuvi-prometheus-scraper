@@ -41,6 +41,5 @@ if __name__ == '__main__':
     signal.signal(signal.SIGINT, sigint_handler)
     print("Starting HTTP server for Prometheus scraping")
     start_http_server(9521)
-
-    print("Reading data from Ruuvi tags")
-    RuuviTagSensor.get_datas(handle_data, beacons.keys())
+    while True:
+      RuuviTagSensor.get_datas(handle_data, beacons.keys())
