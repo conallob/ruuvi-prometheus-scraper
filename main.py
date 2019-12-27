@@ -14,6 +14,11 @@ beacons = {
         'last_update': 0.0,
         'sensor_data': {},
     },
+    'FA:5A:4A:CF:1C:29': {
+        'name': 'landing',
+        'last_update': 0.0,
+        'sensor_data': {},
+    },
 }
 
 temp_gauge = Gauge('ruuvi_temperature_c', 'Temperature in Celsius', ['location'])
