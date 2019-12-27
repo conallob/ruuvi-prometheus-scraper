@@ -1,0 +1,3 @@
+[submodule "ruuvitag-sensor"]
+	path = ruuvitag-sensor
+	url = https://github.com/ttu/ruuvitag-sensor.git
