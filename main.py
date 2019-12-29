@@ -9,13 +9,23 @@ from prometheus_client import start_http_server
 from ruuvitag_sensor.ruuvi import RuuviTagSensor
 
 beacons = {
-    'FA:5A:4A:CF:1C:2A': {
-        'name': 'sitting_room',
+    'F8:7F:12:D4:1F:E5': {
+        'name': 'landing',
         'last_update': 0.0,
         'sensor_data': {},
     },
     'FA:5A:4A:CF:1C:29': {
-        'name': 'landing',
+        'name': 'sitting_room',
+        'last_update': 0.0,
+        'sensor_data': {},
+    },
+    'D2:34:FE:E2:5E:12': {
+        'name': 'hall',
+        'last_update': 0.0,
+        'sensor_data': {},
+    },
+    'C7:E0:C1:DA:93:E7': {
+        'name': 'reuben',
         'last_update': 0.0,
         'sensor_data': {},
     },
