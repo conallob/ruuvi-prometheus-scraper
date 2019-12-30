@@ -29,6 +29,11 @@ beacons = {
         'last_update': 0.0,
         'sensor_data': {},
     },
+    'D0:78:21:66:46:3E': {
+        'name': 'workshop',
+        'last_update': 0.0,
+        'sensor_data': {},
+    },  
 }
 
 temp_gauge = Gauge('ruuvi_temperature_celsius', 'Temperature in Celsius', ['location'])
