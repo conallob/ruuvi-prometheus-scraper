@@ -31,10 +31,10 @@ beacons = {
     },
 }
 
-temp_gauge = Gauge('ruuvi_temperature_c', 'Temperature in Celsius', ['location'])
+temp_gauge = Gauge('ruuvi_temperature_celsius', 'Temperature in Celsius', ['location'])
 humidity_gauge = Gauge('ruuvi_humidity_percent', 'Humidity %', ['location'])
-pressure_gauge = Gauge('ruuvi_pressure_hpa', 'Air pressure hPa', ['location'])
-battery_gauge = Gauge('ruuvi_battery_v', 'Battery V', ['location'])
+pressure_gauge = Gauge('ruuvi_pressure_hectopascals', 'Air pressure hPa', ['location'])
+battery_gauge = Gauge('ruuvi_battery_volts', 'Battery V', ['location'])
 
 def handle_data(data):
     [mac, sensor_data] = data
