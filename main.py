@@ -57,3 +57,4 @@ if __name__ == '__main__':
     start_http_server(9521)
     while True:
       RuuviTagSensor.get_datas(handle_data, beacons.keys())
+      time.sleep(60)
