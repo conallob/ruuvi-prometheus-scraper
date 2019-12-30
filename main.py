@@ -38,10 +38,9 @@ battery_gauge = Gauge('ruuvi_battery_volts', 'Battery V', ['location'])
 
 def handle_data(data):
     [mac, sensor_data] = data
-    beacon = beacons[mac]
-    beacon['last_update'] = time.time()
-    beacon['sensor_data'] = sensor_data
-    location = beacon['name']
+    beacons['last_update'] = time.time()
+    beacons['sensor_data'] = sensor_data
+    location = beacons['name']
     temp_gauge.labels(location).set(sensor_data['temperature'])
     humidity_gauge.labels(location).set(sensor_data['humidity'] / 100.0)
     pressure_gauge.labels(location).set(sensor_data['pressure'])
