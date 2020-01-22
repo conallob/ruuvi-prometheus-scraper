@@ -1,6 +1,7 @@
 # Ruuvi Prometheus scraper
 
-Collects weather data from multiple [Ruuvi tags](https://tag.ruuvi.com/) running the
+Collects weather data from multiple
+[Ruuvi tags](https://ruuvi.com/ruuvitag-specs/) running the
 [official firmware](https://lab.ruuvi.com/ruuvitag-fw/) for consumption by
 [Prometheus](http://www.prometheus.io).
 
@@ -13,7 +14,7 @@ adaptor). They assume that the scraper is run with an user called `ruuvi`.
 You also need to configure Prometheus to scrape data from the app from the
 address `http://localhost:9521/metrics`.
 
-## Install on [Raspian](http://www.raspbian.org)
+## Install on [Raspian](https://www.raspbian.org)
 
 ### Premade Packages
 
