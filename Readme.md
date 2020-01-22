@@ -8,9 +8,10 @@ The python file `main.py` is hardcoded for my tags but can easily be modified
 for your own needs.
 
 You can also take a look at the files under `deploy/` that I use to run this
-scraper on a Raspberry PI 3. They assume that the scraper is run with an user
-called `ruuvi`. You also need to configure Prometheus to scrape data from
-the app from the address `http://localhost:9521/metrics`.
+scraper on a Raspberry PI 3/4 (or a Rasberry Pi with an external Bluebooth
+adaptor). They assume that the scraper is run with an user called `ruuvi`.
+You also need to configure Prometheus to scrape data from the app from the
+address `http://localhost:9521/metrics`.
 
 ## Install on [Raspian](http://www.raspbian.org)
 
