@@ -19,7 +19,7 @@ address `http://localhost:9521/metrics`.
 ### Premade Packages
 
 ```bash
-apt-get install python3 bluez-hcidump python3-prometheus-client python-ptyprocess
+apt-get install python3 bluez-hcidump python3-prometheus-client python3-ptyprocess
 ```
 
 ### Exporter
