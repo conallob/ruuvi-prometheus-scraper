@@ -1,0 +1,9 @@
+[Unit]
+Description=ruuvi-prometheus-scraper.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/conall/ruuvi-prometheus-scraper/main.py
+
+[Install]
+WantedBy=multi-user.target
