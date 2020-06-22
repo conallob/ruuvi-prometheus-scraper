@@ -4,6 +4,9 @@ Description=ruuvi-prometheus-scraper.
 [Service]
 Type=simple
 ExecStart=/usr/bin/python3 /home/conall/ruuvi-prometheus-scraper/main.py
+Restart=always
+# Restart every 3 hours
+RuntimeMaxSec=10800
 
 [Install]
 WantedBy=multi-user.target
