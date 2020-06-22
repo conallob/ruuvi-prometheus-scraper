@@ -6,7 +6,7 @@ Type=simple
 ExecStart=/usr/bin/python3 /home/conall/ruuvi-prometheus-scraper/main.py
 Restart=always
 # Restart every 20 min
-RuntimeMaxSec=1200
+RuntimeMaxSec=12000
 
 [Install]
 WantedBy=multi-user.target
