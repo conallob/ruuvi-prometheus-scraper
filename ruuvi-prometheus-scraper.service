@@ -5,8 +5,8 @@ Description=ruuvi-prometheus-scraper.
 Type=simple
 ExecStart=/usr/bin/python3 /home/conall/ruuvi-prometheus-scraper/main.py
 Restart=always
-# Restart every 20 min
-RuntimeMaxSec=12000
+# Restart every 15 min
+RuntimeMaxSec=900
 
 [Install]
 WantedBy=multi-user.target
